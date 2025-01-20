@@ -1,0 +1,39 @@
+* {
+  background-color: black;
+}
+
+#ddiv {
+  justify-items: center;
+  margin-top: -35px;
+}
+
+#main_div {
+  background-color: rgb(33, 31, 31);
+  height: 400px;
+  width: 670px;
+  justify-items: center;
+  padding-top: 25px;
+  border-radius: 23px;
+}
+
+#display {
+  background-color: white;
+  width: 500px;
+  height: 60px;
+  border-radius: 10px;
+  font-size: 31px;
+}
+
+#btn_div {
+  display: grid;
+  grid-template-columns: repeat(4, 150px);
+  background-color: rgb(33, 31, 31);
+}
+
+#btn_div > button {
+  height: 74px;
+  background-color: gray;
+  width: 150px;
+  border-radius: 10px;
+  font-size: 29px;
+}
