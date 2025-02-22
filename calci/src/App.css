@@ -1,32 +1,44 @@
-* {
+body {
   background-color: black;
+  height: 100%; /* Ensure body takes full height */
+  margin: 0; /* Remove default margin */
+  overflow: hidden;
 }
 
-#ddiv {
-  justify-items: center;
-  margin-top: -35px;
+html {
+  height: 100%; /* Ensure html takes full height */
+}
+.Logo {
+  font-family: sans-serif;
+  font-size: 300%;
+  color: white;
+  text-align: center;
+  font-weight: 600;
 }
 
 #main_div {
   background-color: rgb(33, 31, 31);
-  height: 400px;
-  width: 670px;
+  width: 43vw;
   justify-items: center;
   padding-top: 25px;
   border-radius: 23px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -20px;
 }
 
 #display {
   background-color: white;
-  width: 500px;
+  width: 135%;
   height: 60px;
   border-radius: 10px;
   font-size: 31px;
+  margin-left: -19%;
 }
 
 #btn_div {
   display: grid;
-  grid-template-columns: repeat(4, 150px);
+  grid-template-columns: repeat(4, 1fr);
   background-color: rgb(33, 31, 31);
 }
 
@@ -36,4 +48,83 @@
   width: 150px;
   border-radius: 10px;
   font-size: 29px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 374px) {
+  #main_div {
+    width: 90%;
+  }
+
+  #display {
+    width: 89%;
+    margin-left: 4%;
+  }
+  #btn_div > button {
+    width: 100%;
+    height: 90px;
+    font-size: 35px;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 424px) {
+  #main_div {
+    width: 82%;
+    margin-top: -9%;
+  }
+
+  #display {
+    width: 89%;
+    margin-left: 4%;
+  }
+  #btn_div > button {
+    width: 100%;
+    height: 95px;
+    font-size: 40px;
+  }
+}
+
+@media screen and (min-width: 425px) and (max-width: 767px) {
+  #main_div {
+    width: 75%;
+    margin-top: -5%;
+  }
+
+  #display {
+    width: 84%;
+    margin-left: 7%;
+  }
+  #btn_div > button {
+    width: 100%;
+    height: 95px;
+    font-size: 38px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  #main_div {
+    width: 83vw;
+  }
+
+  #display {
+    width: 135%;
+  }
+  #btn_div > button {
+    height: 74px;
+
+    width: 150px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  #main_div {
+    width: 65vw;
+  }
+
+  #display {
+    width: 135%;
+  }
+  #btn_div > button {
+    height: 74px;
+
+    width: 150px;
+  }
 }
